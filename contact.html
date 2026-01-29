@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Jovo Tech Investments</title>
+    <meta name="description"
+        content="Contact Jovotech Investments for agribusiness partnerships, SCIC inquiries, or energy solutions in Zimbabwe.">
+    <meta name="keywords" content="Contact Jovotech, Zimbabwe business consultancy, Darwendale contact">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-hero {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/2c7e6e0198ab063464b3d0bfc426684b.jpg') center/cover;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .contact-method {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .contact-method i {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            background: rgba(30, 111, 217, 0.1);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="IMG-20260127-WA0062.jpg" alt="Jovo Tech Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="agriculture.html">Agriculture</a></li>
+                    <li><a href="energy.html">Energy & EVs</a></li>
+                    <li><a href="students.html">Development</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p>We are ready to partner with you on your next sustainable venture.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 40px;">Have questions about our farming models, energy tech, or the
+                        commission structure? Reach out to our team today.</p>
+
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>teverai777@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/263774115578" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact-form">
+                    <form id="jovo-contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I am a...</label>
+                            <select id="interest" name="interest">
+                                <option value="farmer">Farmer (Rabbitry/Goats/Apiculture)</option>
+                                <option value="investor">Investor / Partner</option>
+                                <option value="supplier">Input Supplier</option>
+                                <option value="student">Student / Scholar</option>
+                                <option value="buyer">Buyer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp FAB -->
+    <a href="https://wa.me/263774115578" class="fab-whatsapp" target="_blank" title="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                        <img src="IMG-20260127-WA0062.jpg" alt="Jovo Tech Logo" style="height: 60px;">
+                    </a>
+                    <p>Building sustainable, tech-driven, and agriculture-centered enterprises in Zimbabwe.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="energy.html">Energy & Tech</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jovotech Investments (Pvt) Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('jovo-contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! A Jovo Tech representative will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
