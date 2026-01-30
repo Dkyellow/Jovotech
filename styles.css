@@ -683,4 +683,10 @@ nav {
     section:last-of-type {
         padding-bottom: 100px !important;
     }
+
+    .energy-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
