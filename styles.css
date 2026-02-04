@@ -499,6 +499,12 @@ nav {
     color: var(--text-color);
   }
 
+  /* Force white toggle when menu is active regardless of scroll */
+  .nav-links.active ~ .mobile-toggle,
+  nav:has(.nav-links.active) .mobile-toggle {
+    color: var(--white) !important;
+  }
+
   #main-header {
     padding: 10px 0 !important;
   }
