@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Development | Jovo Tech Investments</title>
+    <title>Students | Jovo Tech Investments</title>
     <meta name="description"
-        content="Empowering the next generation of Zimbabwean innovators through SCIC, scholarships, and student accommodation projects by Jovotech.">
+        content="Scholarship opportunities and international education partnerships. Join the 2026 March intake for top-tier undergraduate programs in China with SICAS.">
     <meta name="keywords"
-        content="SCIC Darwendale, Zimbabwe Scholarships, Student Accommodation Zimbabwe, Jovotech Education">
+        content="SICAS Zimbabwe, China Scholarships, Study in China, Jovo Tech Students, Undergraduate Programs 2026">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jovotech.co.zw/students.html">
-    <meta property="og:title" content="Education & Development | Jovotech Investments">
+    <meta property="og:title" content="Students & Scholarships | Jovotech Investments">
     <meta property="og:description"
-        content="Building Sabino Canyon International College (SCIC) and student accommodation to empower Zimbabwe's future leaders.">
-    <meta property="og:image" content="https://jovotech.co.zw/IMG-20260127-WA0062.jpg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="https://jovotech.co.zw/IMG-20260127-WA0062.jpg">
+        content="Partnering with SICAS to provide world-class education opportunities. Apply for 2026 March intake today.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +27,26 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .page-hero {
-            height: 50vh;
+            height: 60vh;
             display: flex;
             align-items: center;
             color: white;
             position: relative;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/IMG-20260204-WA0105.jpg') center/cover;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .page-hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
 
         .scholarship-card {
@@ -45,11 +55,60 @@
             border-radius: 20px;
             margin-bottom: 30px;
             border-left: 5px solid var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .scholarship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
         }
 
         .scholarship-card h3 {
             margin-bottom: 15px;
             color: var(--primary-color);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .info-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-item h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sicas-logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+
+        .price-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -72,7 +131,7 @@
                     <li><a href="agriculture.html">Agriculture</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="energy.html">Energy & EVs</a></li>
-                    <li><a href="students.html" class="active">Development</a></li>
+                    <li><a href="students.html" class="active">Students</a></li>
                     <li><a href="contact.html" class="btn btn-primary">Partner With Us</a></li>
                 </ul>
                 <div class="mobile-toggle">
@@ -83,10 +142,13 @@
     </header>
 
     <section class="page-hero">
+        <video autoplay muted loop playsinline>
+            <source src="images/VID-20260204-WA0201.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <div class="hero-content">
-                <h1>Student Development</h1>
-                <p>Investing in the future leaders of Zimbabwe's tech and agriculture sectors.</p>
+                <h1>Global Opportunities</h1>
+                <p>Empowering Zimbabwean students with world-class education partnerships.</p>
             </div>
         </div>
     </section>
@@ -94,39 +156,29 @@
     <section class="section-padding">
         <div class="container">
             <div class="section-title reveal">
-                <span>Empowering Youth</span>
-                <h2>Scholarships & Mentorship</h2>
-                <p>We believe that education and mentorship are the keys to unlocking Zimbabwe's economic potential.</p>
+                <span>Education Partnership</span>
+                <h2>Study in China (SICAS)</h2>
+                <p>We are proud to announce our official partnership with Study in China Admission System (SICAS). Jovotech Investments is now recruiting students on behalf of SICAS for top-tier undergraduate programs.</p>
             </div>
 
-            <div class="split-layout reveal">
+            <div class="split-layout reveal" style="align-items: center;">
                 <div class="split-image">
-                    <img src="images/IMG-20260204-WA0099.jpg" alt="Empowering the Next Generation"
-                        class="image-rounded">
+                    <img src="images/WhatsApp Image 2026-02-04 at 11.42.34.jpeg" alt="SICAS Logo" class="sicas-logo">
+                    <img src="images/IMG-20260204-WA0105.jpg" alt="Student Recruitment" class="image-rounded">
                 </div>
                 <div class="split-text">
-                    <h3>Sabino Canyon International College (SCIC)</h3>
-                    <p>Jovotech is spearheading the construction of a state-of-the-art educational complex in
-                        Darwendale, designed to provide high-quality, inclusive education from primary to tertiary
-                        levels.</p>
+                    <h3>2026 March Intake Undergraduates</h3>
+                    <p>Applications are now open for the March 2026 intake. Programs are taught entirely in English and offer the same study duration and graduation timeline as the September intake.</p>
+                    
+                    <ul class="feature-list" style="margin: 20px 0;">
+                        <li><i class="fas fa-calendar-alt" style="color: var(--secondary-color);"></i> Deadline: February 20, 2026</li>
+                        <li><i class="fas fa-clock" style="color: var(--secondary-color);"></i> Duration: March 2026 - July 2029 (3.5 Years)</li>
+                        <li><i class="fas fa-user-graduate" style="color: var(--secondary-color);"></i> Age Requirement: 18 - 25 Years</li>
+                    </ul>
 
-                    <div class="scholarship-card" style="margin-top:20px;">
-                        <h4>SCIC Institutional Capacity</h4>
-                        <ul class="feature-list" style="list-style: none; padding:0;">
-                            <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> 300-student
-                                Primary Boarding Facility</li>
-                            <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> 1,000-student
-                                Secondary Boarding School</li>
-                            <li><i class="fas fa-check-circle" style="color: var(--secondary-color);"></i> 1,500-student
-                                Tertiary Institution</li>
-                        </ul>
-                    </div>
-
-                    <div class="scholarship-card" style="border-left-color: var(--primary-color);">
-                        <h4>Student Accommodation Project</h4>
-                        <p>We are investing in purpose-built student accommodation near major tertiary institutions,
-                            providing secure, affordable, and technology-integrated living spaces.</p>
-                    </div>
+                    <a href="images/Bachelor's and Master's scholarship program for September 2026 intake- Hangzhou City (1).doc" class="btn btn-primary" download>
+                        <i class="fas fa-file-download" style="margin-right: 10px;"></i> Download Program Details
+                    </a>
                 </div>
             </div>
         </div>
@@ -135,23 +187,59 @@
     <section class="section-padding bg-soft reveal">
         <div class="container">
             <div class="section-title">
-                <span>Our Impact Areas</span>
-                <h2>Sectors of Focus</h2>
+                <span>Available Majors</span>
+                <h2>Undergraduate Programs</h2>
             </div>
-            <div class="sector-grid">
-                <div class="sector-card">
-                    <i class="fas fa-vial"></i>
-                    <h3>STEM Research</h3>
-                    <p>Supporting research in lithium technology and clean energy storage.</p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4><i class="fas fa-cogs"></i> Mechanical Engineering</h4>
+                    <p>Cutting-edge robotics, thermodynamics, and manufacturing technologies.</p>
                 </div>
-                <div class="sector-card">
-                    <i class="fas fa-tractor"></i>
-                    <h3>Agro-Innovation</h3>
-                    <p>Mentoring the next generation of smart farmers and agri-tech developers.</p>
+                <div class="info-item">
+                    <h4><i class="fas fa-bolt"></i> Electrical Engineering</h4>
+                    <p>Focus on energy systems, electronics, and sustainable tech.</p>
                 </div>
-                <div class="sector-card">
-                    <h3>Sustainability</h3>
-                    <p>Educating youth on the importance of circular economies and green businesses.</p>
+                <div class="info-item">
+                    <h4><i class="fas fa-globe-africa"></i> Economics & Trade</h4>
+                    <p>Mastering global markets and international business relations.</p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-laptop-code"></i> Computer Science</h4>
+                    <p>AI, software development, and modern computing architectures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding reveal">
+        <div class="container text-center">
+            <div class="section-title">
+                <span>Financial Support</span>
+                <h2>Scholarships & Fees</h2>
+            </div>
+            
+            <div class="scholarship-card" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <h3>Annual Tuition Fee Package</h3>
+                <p>Through our partnership, we provide significant tuition waivers for qualified students.</p>
+                
+                <div style="margin-top: 20px;">
+                    <span class="original-price">Original Fee: 18,000 RMB ($2,570 USD) / Year</span><br>
+                    <div class="price-tag">
+                        <i class="fas fa-gift" style="margin-right: 10px;"></i> Scholarship Applied: -6,000 RMB ($860 USD)
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px; font-size: 1.5rem; font-weight: 800; color: var(--primary-color);">
+                    Final Fee: 12,000 RMB ($1,715 USD) / Per Year
+                </div>
+                
+                <p style="margin-top: 20px; font-style: italic; font-size: 0.9rem; color: var(--text-light);">
+                    Notice: Upon pre-admission, applicants must pay the tuition fee first, after which the university will issue the JW202 visa form.
+                </p>
+                
+                <div style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Apply Now through Jovotech</a>
                 </div>
             </div>
         </div>
@@ -186,11 +274,11 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Sitemap</h4>
+                    <h4>China Scholarships</h4>
                     <ul>
-                        <li><a href="students.html">Scholarships</a></li>
-                        <li><a href="students.html">Mentorship</a></li>
-                        <li><a href="students.html">Workshops</a></li>
+                        <li><a href="students.html">March 2026 Intake</a></li>
+                        <li><a href="students.html">SICAS Partnership</a></li>
+                        <li><a href="students.html">Engineering Majors</a></li>
                         <li><a href="contact.html">Apply Now</a></li>
                     </ul>
                 </div>
